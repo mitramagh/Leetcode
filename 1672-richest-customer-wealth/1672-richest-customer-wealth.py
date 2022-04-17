@@ -7,9 +7,11 @@ class Solution:
         #     for fir_acc in acc:
         #         each_sum += fir_acc
         
-        for account in accounts:
-            if sum(account)>richest:
-                richest = sum(account)
-        return richest
+#         for account in accounts:
+#             if sum(account)>richest:
+#                 richest = sum(account)
+#         return richest
             
         
+        max_num = max(sum(account) for account in accounts)
+        return max_num
