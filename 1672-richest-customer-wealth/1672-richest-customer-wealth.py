@@ -1,11 +1,6 @@
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
         richest = 0
-        # each_sum = 0
-        # each_sum_list=[]
-        # for acc in accounts:
-        #     for fir_acc in acc:
-        #         each_sum += fir_acc
         
 #         for account in accounts:
 #             if sum(account)>richest:
@@ -13,5 +8,5 @@ class Solution:
 #         return richest
             
         
-        max_num = max(sum(account) for account in accounts)
+        max_num = max([sum(account) for account in accounts])
         return max_num
